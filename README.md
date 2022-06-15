@@ -6,10 +6,10 @@ LEFT JOIN country   ON city.country_id = country.country_id;
 # customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz RIGHT JOIN sorgusunu yazınız.
 
 select * from customer
-left join payment on payment.customer_id = customer.customer_id;
+right join payment on payment.customer_id = customer.customer_id;
 
 # customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz FULL JOIN sorgusunu yazınız.
 
 
 select * from customer
-left join rental on rental.customer_id = customer.customer_id;
+full join rental on rental.customer_id = customer.customer_id;
